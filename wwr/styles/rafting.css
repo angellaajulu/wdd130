@@ -34,10 +34,11 @@ body {
    ======================== */
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 16px 20px;
   background-color: var(--primary-color);
+  gap: 8px;
 }
 
 header img {
@@ -47,7 +48,6 @@ header img {
 nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 16px;
   font-weight: bold;
 }
 
