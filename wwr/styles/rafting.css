@@ -559,6 +559,76 @@ footer {
   margin: 0 auto;
 }
 
+/* ========================
+   Hero Section (Trips Page)
+   ======================== */
+.hero {
+  position: relative;
+  background-image: url("images/trips-hero.jpg");
+  background-size: cover;         /* fills entire section */
+  background-position: center;    /* keeps image centered */
+  background-repeat: no-repeat;
+  min-height: 70vh;               /* good height for hero section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for text contrast */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Text and content stay above overlay */
+.hero h1,
+.hero article {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+/* Main hero heading */
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Article box styling */
+.hero article {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Article image and text layout */
+.hero article img {
+  display: block;
+  max-width: 150px;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+/* Article text styling */
+.hero article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero article p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 /* ============================= */
 /* TRIPS PAGE – MOBILE OPTIMIZATION */
 /* ============================= */
