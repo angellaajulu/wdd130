@@ -462,15 +462,25 @@ footer {
    Trips Page Styles
    ======================== */
 
-/* Trip Grid Layout */
+/* Trips Page – Grid Layout */
 .trips-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  text-align: center;
   padding: 2rem;
   background-color: #f5f5f5;
   border-radius: 10px;
   margin-top: 2rem;
+}
+
+.trips-grid h2 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Grid only applies to the cards inside */
+.trips-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
 .trip-card {
@@ -485,11 +495,6 @@ footer {
 .trip-card:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.trip-card h2 {
-  color: #333;
-  margin-top: 1rem;
 }
 
 /* Trip Table */
@@ -542,6 +547,17 @@ footer {
   background-color: #4a3db8;
 }
 
+.hero article {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center them horizontally */
+  text-align: center;     /* Center text inside */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
 /* ============================= */
 /* TRIPS PAGE – MOBILE OPTIMIZATION */
@@ -625,3 +641,4 @@ footer {
     font-size: 1rem;
   }
 }
+
