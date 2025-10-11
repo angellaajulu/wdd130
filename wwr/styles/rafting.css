@@ -293,3 +293,335 @@ footer {
   width: 25px;
   height: 25px;
 }
+
+/* HOME-PAGE CSS */
+/* Small screens: phones and tablets */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* HERO SECTION */
+  .hero h1 {
+    font-size: 1.5rem;
+    width: 80%;
+    padding: 0.5rem;
+  }
+
+  /* NEWSLETTER */
+  .newsletter form {
+    width: 90%;
+  }
+  .newsletter input {
+    width: 100%;
+  }
+
+  /* CALL TO ACTION */
+  .cta {
+    padding: 1.5rem;
+  }
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  /* GRID CONTENT */
+  .grid-content {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .grid-item {
+    text-align: center;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* ========================= */
+/* UNIVERSAL RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header img.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  header nav a {
+    font-size: 1rem;
+  }
+
+  /* HERO SECTION */
+  .hero h1 {
+    font-size: 1.5rem;
+    width: 80%;
+    padding: 0.5rem;
+  }
+
+  /* NEWSLETTER */
+  .newsletter form {
+    width: 90%;
+  }
+  .newsletter input {
+    width: 100%;
+  }
+
+  /* CALL TO ACTION */
+  .cta {
+    padding: 1.5rem;
+  }
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  /* GRID CONTENT (used on Home, Trips, About) */
+  .grid-content,
+  .trips-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .grid-item,
+  .trip-card,
+  .about-card {
+    text-align: center;
+  }
+
+  /* CONTACT FORM */
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  footer .social img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ========================
+   Trips Page Styles
+   ======================== */
+
+/* Trip Grid Layout */
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.trip-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trip-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.trip-card h2 {
+  color: #333;
+  margin-top: 1rem;
+}
+
+/* Trip Table */
+.trip-table {
+  padding: 2rem;
+  text-align: center;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.trip-table th, 
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+}
+
+.trip-table th {
+  background-color: #b9c6e5;
+}
+
+.trip-table tr:nth-child(even) {
+  background-color: #f0f0ff;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  background-color: #e5dbff;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #5a4fcf;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #4a3db8;
+}
+
+
+/* ============================= */
+/* TRIPS PAGE – MOBILE OPTIMIZATION */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  /* HERO SECTION */
+  .hero h1 {
+    font-size: 1.8rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.5rem 1rem;
+  }
+
+  .hero article {
+    position: static;
+    transform: none;
+    margin: 1rem auto;
+    max-width: 90%;
+    background: #ffffffd0;
+  }
+
+  .hero article img {
+    max-width: 100px;
+  }
+
+  /* TRIP CARDS */
+  .trips-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .trip-card {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .trip-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  /* TRIP TABLE */
+  .trip-table {
+    padding: 1rem;
+  }
+
+  .trip-table table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+
+  .trip-table th, 
+  .trip-table td {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  /* CTA SECTION */
+  .cta {
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+}
